@@ -1,0 +1,140 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+ 
+
+:root{
+--Darkcyan: hsl(158, 36%, 37%);
+--Darkgreen: hsl(158, 79%, 19%);
+--Cream: hsl(30, 38%, 92%);
+
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body,html{
+   width: 100%;
+   height: 100%;
+   font-family:"Montserrat", sans-serif; 
+}
+main{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--Cream);
+}
+.container{
+   width: 520px;
+   height: 400px;
+   display: flex;
+}
+
+.top{
+   width: 50%;
+   height: 100%;
+}
+img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 0 0 10px ;
+}
+h1{
+   font-family: "Fraunces", serif;
+}
+.bottom{
+   width: 50%;
+   height: 100%;
+   background:var(--White);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 1.30rem;
+   border-radius: 0 10px 10px 0 ;
+}
+.bottom-child{
+   display: flex;
+   justify-content: space-between;
+  width:66%;
+}
+.small{
+   font-size:12px;
+   display: flex;align-items: center;
+}
+del{
+   color: #000000a6;
+}
+
+p{
+   color: #000000a6;
+}
+.ppp{
+   font-size: .80rem;
+   line-height: 1.20rem;
+}
+.gap{
+   letter-spacing: 5px;
+}
+h2{
+   color: var(--Darkcyan);
+   font-family: "Fraunces", serif;
+}
+a{
+   text-decoration: none;
+   text-align: center;
+   color: var(--White);
+   font-family: "Fraunces", serif;
+}
+.img2{
+   width: 20px;
+   height: 20px;
+}
+.last{
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+   background: var(--Darkcyan);
+   padding: 10px;
+   border-radius: 7px;
+   cursor: pointer;
+   
+}
+
+.last:hover{
+   background: var(--Darkgreen);
+}
+
+@media (max-width:460px) {
+   .container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+   }
+
+   .top{
+      width: 100%;
+      height:40%;
+      border-radius: 10px;
+   }
+   img{
+      border-radius: 7px 7px 0 0;
+      object-fit: cover;
+   }
+   .bottom{
+      width: 100%;
+      height: 60%;
+      border-radius: 0 0 7px 7px;
+   }
+   
+}
